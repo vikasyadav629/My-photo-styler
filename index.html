@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Professional wedding photo editing service with fast delivery, consistent style, and natural color correction. Free sample available."/>
+<title>Wedding Photo Editing Service for Photographers | My Photo Styler</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR — edit the text here -->
+<div class="announcement">
+  💍 Trusted by wedding photographers in the US &amp; Germany —
+  <a href="#" onclick="showPage('order')">Get Your Free Sample Edit</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a class="nav-logo" href="#" onclick="showPage('home')">
+    <div class="nav-logo-icon">📸</div>
+    My Photo <span>Styler</span>
+  </a>
+  <div class="nav-links">
+    <a href="#" onclick="showPage('home')"      class="active" id="nav-home">Home</a>
+    <a href="#" onclick="showPage('services')"  id="nav-services">Services</a>
+    <a href="#" onclick="showPage('portfolio')" id="nav-portfolio">Portfolio</a>
+    <a href="#" onclick="showPage('pricing')"   id="nav-pricing">Pricing</a>
+    <a href="#" onclick="showPage('about')"     id="nav-about">About Us</a>
+    <a href="blog.html"                         id="nav-blog">Blog</a>
+    <a href="#" onclick="showPage('contact')"   id="nav-contact">Contact</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-ghost"    onclick="showPage('contact')">Get a Quote</button>
+    <button class="btn-primary"  onclick="showPage('order')">Get Free Sample</button>
+  </div>
+  <div class="hamburger" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()">✕</button>
+  <a href="#" onclick="showPage('home');toggleMobileMenu()">Home</a>
+  <a href="#" onclick="showPage('services');toggleMobileMenu()">Services</a>
+  <a href="#" onclick="showPage('portfolio');toggleMobileMenu()">Portfolio</a>
+  <a href="#" onclick="showPage('pricing');toggleMobileMenu()">Pricing</a>
+  <a href="#" onclick="showPage('about');toggleMobileMenu()">About Us</a>
+  <a href="blog.html">Blog</a>
+  <a href="#" onclick="showPage('contact');toggleMobileMenu()">Contact</a>
+  <div class="mobile-menu-actions">
+    <button class="btn-lg btn-blue" onclick="showPage('order');toggleMobileMenu()" style="width:100%;justify-content:center;margin-top:16px">Get Free Sample</button>
+  </div>
+</div>
+
+<!-- ============================================================
+     HOME PAGE
+============================================================ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO — edit headline and subtext here -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Trusted by wedding photographers in US &amp; Germany
+        </div>
+        <h1>Wedding Photo &amp; <span>Video Editing</span> for Photographers</h1>
+        <p class="hero-sub">Fast delivery. Consistent style. Free sample edit.</p>
+        <div class="hero-actions">
+          <button class="btn-lg btn-blue"          onclick="showPage('order')">✨ Get Free Sample</button>
+          <button class="btn-lg btn-outline-white" onclick="showPage('services')">View Services →</button>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item"><span>⚡</span> 24–48h Turnaround</div>
+          <div class="hero-trust-item"><span>🎨</span> Consistent Style</div>
+          <div class="hero-trust-item"><span>✅</span> Free Sample Edit</div>
+          <div class="hero-trust-item"><span>💍</span> Wedding Specialists</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-ba ba-wrap" id="heroBa">
+          <img src="images/wedding-edit.jpg" alt="After editing"/>
+          <div class="ba-before" id="heroBaBefore" style="width:50%">
+            <img src="images/wedding-edit.jpg" alt="Before editing" style="filter:saturate(0.3) brightness(0.75)"/>
+          </div>
+          <div class="ba-handle" id="heroBaHandle" style="left:50%">
+            <div class="ba-handle-btn">↔</div>
+          </div>
+          <span class="ba-label before">Before</span>
+          <span class="ba-label after">After</span>
+        </div>
+        <div class="hero-float-1">
+          <div class="float-icon">✨</div>
+          <div><div class="float-text">Skin Retouched</div><div class="float-sub">Natural result</div></div>
+        </div>
+        <div class="hero-float-2">
+          <div class="float-icon">🎨</div>
+          <div><div class="float-text">Color Graded</div><div class="float-sub">Cinematic look</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR — edit numbers here -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item"><div class="stat-num">10K<em>+</em></div><div class="stat-lbl">Photos Edited</div></div>
+      <div class="stat-item"><div class="stat-num">500<em>+</em></div><div class="stat-lbl">Happy Clients</div></div>
+      <div class="stat-item"><div class="stat-num">48<em>h</em></div><div class="stat-lbl">Avg Turnaround</div></div>
+      <div class="stat-item"><div class="stat-num">100<em>%</em></div><div class="stat-lbl">Satisfaction Rate</div></div>
+    </div>
+  </div>
+
+  <!-- SERVICES OVERVIEW — edit card titles, descriptions and prices here -->
+  <section class="section services-overview" style="background:var(--bg2)">
+    <div class="section-header">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Editing Services for <em>Photographers</em></h2>
+      <p class="section-sub">Specialized post-production built around the needs of wedding photographers and content creators.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="svc-card">
+        <img src="images/wedding-edit.jpg" alt="Wedding Color Correction" class="svc-img"/>
+        <div class="svc-card-body">
+          <div class="svc-icon">💍</div>
+          <h3>Wedding Color Correction</h3>
+          <p>Gallery-wide color grading with warm, natural tones matched to your Lightroom style.</p>
+          <div class="svc-price">From $0.50 per photo</div>
+          <a class="svc-link" href="#" onclick="showService('wedding-editing')">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <img src="images/retouching.jpg" alt="Portrait Retouching" class="svc-img"/>
+        <div class="svc-card-body">
+          <div class="svc-icon">🖼️</div>
+          <h3>Portrait &amp; Skin Retouching</h3>
+          <p>Natural skin, blemish removal, and subtle enhancements. No plastic, over-processed results.</p>
+          <div class="svc-price">From $6 per photo</div>
+          <a class="svc-link" href="#" onclick="showService('retouching')">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <img src="images/jewellery.jpg" alt="Jewellery Retouching" class="svc-img"/>
+        <div class="svc-card-body">
+          <div class="svc-icon">💎</div>
+          <h3>Jewellery Retouching</h3>
+          <p>Reflection cleanup, background removal, and polish enhancement for catalog-ready results.</p>
+          <div class="svc-price">From $5 per photo</div>
+          <a class="svc-link" href="#" onclick="showService('jewellery-retouching')">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <img src="images/video-edit.jpg" alt="Video Editing" class="svc-img"/>
+        <div class="svc-card-body">
+          <div class="svc-icon">🎬</div>
+          <h3>Video &amp; Reel Editing</h3>
+          <p>Beat-synced Reels, wedding films, and YouTube videos. Built for photographers growing online.</p>
+          <div class="svc-price">From $49 per video</div>
+          <a class="svc-link" href="#" onclick="showService('video-editing')">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <img src="images/color-grading.jpg" alt="Color Grading" class="svc-img"/>
+        <div class="svc-card-body">
+          <div class="svc-icon">🎨</div>
+          <h3>Color Grading &amp; LUTs</h3>
+          <p>Custom LUT creation and cinematic grading. Moody, airy, warm film — any style you want.</p>
+          <div class="svc-price">From $1.50 per photo</div>
+          <a class="svc-link" href="#" onclick="showService('wedding-editing')">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <img src="images/background-removal.jpg" alt="Background Removal" class="svc-img"/>
+        <div class="svc-card-body">
+          <div class="svc-icon">✂️</div>
+          <h3>Background Removal</h3>
+          <p>Pixel-precise cutouts for products and portraits. Amazon and Shopify ready.</p>
+          <div class="svc-price">From $2 per photo</div>
+          <a class="svc-link" href="#" onclick="showService('retouching')">Learn More →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER SHOWCASE -->
+  <section class="section" style="background:#fff">
+    <div class="section-header">
+      <div class="section-label">Before &amp; After</div>
+      <h2 class="section-title">See the <em>Transformation</em></h2>
+      <p class="section-sub">Drag the slider to compare. Real results from real client work.</p>
+    </div>
+    <div class="ba-showcase-grid">
+      <div>
+        <div class="ba-type-badge">Portrait Retouching</div>
+        <div class="ba-wrap" style="height:340px">
+          <img src="images/retouching.jpg" alt="After retouch"/>
+          <div class="ba-before" style="width:50%">
+            <img src="images/retouching.jpg" alt="Before" style="filter:saturate(0.5) brightness(0.85)"/>
+          </div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span>
+          <span class="ba-label after">After</span>
+        </div>
+        <div class="ba-caption">
+          <h4>High-End Portrait Retouch</h4>
+          <p>Skin smoothing, eye enhancement, and natural color grading</p>
+        </div>
+      </div>
+      <div>
+        <div class="ba-type-badge">Wedding Color Correction</div>
+        <div class="ba-wrap" style="height:340px">
+          <img src="images/wedding-edit.jpg" alt="After wedding edit"/>
+          <div class="ba-before" style="width:50%">
+            <img src="images/wedding-edit.jpg" alt="Before" style="filter:saturate(0.3) brightness(0.75)"/>
+          </div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span>
+          <span class="ba-label after">After</span>
+        </div>
+        <div class="ba-caption">
+          <h4>Wedding Color Correction</h4>
+          <p>Warm, romantic tones with consistent white balance across the gallery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS — edit steps here -->
+  <section class="how-section">
+    <div class="section-header" style="margin-bottom:64px">
+      <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd">Simple Process</div>
+      <h2 class="section-title" style="color:#fff">How It <em>Works</em></h2>
+      <p class="section-sub" style="color:#64748b;margin:0 auto">Four simple steps. No back-and-forth. No surprises.</p>
+    </div>
+    <div class="how-grid container">
+      <div class="how-item">
+        <div class="how-circle">📤</div>
+        <h4>Send Your Photos</h4>
+        <p>Upload via our secure portal or share a Google Drive link. RAW, JPEG, MP4 — all accepted.</p>
+      </div>
+      <div class="how-item">
+        <div class="how-circle">🎨</div>
+        <h4>We Edit</h4>
+        <p>Our editors work on your files to your style and references, typically within 24–48 hours.</p>
+      </div>
+      <div class="how-item">
+        <div class="how-circle">👁️</div>
+        <h4>You Review</h4>
+        <p>Check the results. Request changes if needed — revisions are always included, free.</p>
+      </div>
+      <div class="how-item">
+        <div class="how-circle">⬇️</div>
+        <h4>Final Delivery</h4>
+        <p>Download your edited files in full resolution, ready to deliver to your clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US — edit reasons here -->
+  <section class="section" style="background:var(--bg2)">
+    <div class="section-header">
+      <div class="section-label">Why Us</div>
+      <h2 class="section-title">Built for <em>Photographers</em></h2>
+      <p class="section-sub">Everything about our workflow is designed around how photographers actually work.</p>
+    </div>
+    <div class="why-grid container">
+      <div class="why-card"><span class="why-card-icon">⚡</span><h3>24–48 Hour Delivery</h3><p>Standard turnaround on all photo orders. Rush options available. We've never missed a deadline.</p></div>
+      <div class="why-card"><span class="why-card-icon">🎨</span><h3>Consistent Editing Style</h3><p>We match your existing presets and style references so every gallery looks cohesive shoot to shoot.</p></div>
+      <div class="why-card"><span class="why-card-icon">✨</span><h3>Free Sample Edit</h3><p>Send us 5 photos. We'll edit them free so you can judge quality before committing to a paid order.</p></div>
+      <div class="why-card"><span class="why-card-icon">💰</span><h3>Affordable Pricing</h3><p>Starting from $0.50 per photo. Designed so you can outsource profitably without cutting your margins.</p></div>
+      <div class="why-card"><span class="why-card-icon">📸</span><h3>Photographer-First Workflow</h3><p>We speak Lightroom, Capture One, and DaVinci. Share your presets and we handle the rest.</p></div>
+      <div class="why-card"><span class="why-card-icon">🔒</span><h3>Private &amp; Secure</h3><p>Your files are encrypted and deleted 30 days after delivery. Never shared without permission.</p></div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section class="trust-section">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-label">24–48h Delivery</div>
+        <div class="trust-desc">Consistent turnaround. Rush options available.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🎨</div>
+        <div class="trust-label">Your Style, Matched</div>
+        <div class="trust-desc">We work from your presets and references.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">✨</div>
+        <div class="trust-label">Free Sample Edit</div>
+        <div class="trust-desc">Try before you pay. Send 5 photos free.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div class="trust-label">Free Revisions</div>
+        <div class="trust-desc">Included in every order, no questions asked.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>Start with a free sample edit</h2>
+    <p>Send us 5 photos — we'll edit them free so you can judge quality before committing.</p>
+    <div class="cta-actions">
+      <button class="btn-lg btn-blue"          onclick="showPage('order')">✨ Get Free Sample</button>
+      <button class="btn-lg btn-outline-white" onclick="showPage('pricing')">View Pricing</button>
+    </div>
+  </section>
+
+  <!-- FAQ — edit questions and answers here -->
+  <section class="section" style="background:var(--bg2)">
+    <div class="section-header">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How do I send my photos for editing?<div class="faq-icon">+</div></div>
+        <div class="faq-a">Use our Upload page — drag and drop your files, choose your service, and write your editing instructions. We accept JPEG, PNG, RAW, MP4, MOV and more.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How long does photo editing take?<div class="faq-icon">+</div></div>
+        <div class="faq-a">Standard turnaround is 24–48 hours for photos and 48–72 hours for videos. Rush delivery is available for an additional fee.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Are revisions included in the price?<div class="faq-icon">+</div></div>
+        <div class="faq-a">Yes — all packages include at least 2 free revisions. Premium packages include unlimited revisions.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you keep my photos private?<div class="faq-icon">+</div></div>
+        <div class="faq-a">Absolutely. Your files are stored with encryption and deleted 30 days after delivery. We never use your photos without written permission.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How do I pay? Do you accept USD and EUR?<div class="faq-icon">+</div></div>
+        <div class="faq-a">Yes — we accept USD and EUR via PayPal, Wise, and bank transfer. Invoices are issued before work begins.</div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end home -->
+
+
+<!-- ============================================================
+     SERVICES PAGE
+============================================================ -->
+<div class="page" id="page-services">
+  <div class="page-hero">
+    <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd;margin-bottom:14px">Our Services</div>
+    <h1>Wedding &amp; Photography Editing Services</h1>
+    <p>Every service is built around how professional photographers work — fast, consistent, and matched to your style.</p>
+  </div>
+
+  <div class="services-category">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">📸</div>
+        <div>
+          <div class="category-title">Photo Editing Services</div>
+          <div class="category-sub">Wedding galleries, portrait retouching, jewellery, and product editing</div>
+        </div>
+      </div>
+
+      <!-- WEDDING EDITING -->
+      <section id="wedding-editing" style="scroll-margin-top:80px">
+        <div class="service-detail-grid">
+          <div class="service-detail-info">
+            <div class="service-price-tag">From $0.50 per photo</div>
+            <h3>Wedding Color Correction</h3>
+            <p>Gallery-wide color correction with a consistent, warm, and natural look. We match your editing style, white balance, and exposure preferences across every image.</p>
+            <ul class="service-features">
+              <li>Style-matched color grading across full gallery</li>
+              <li>Consistent white balance &amp; exposure</li>
+              <li>Skin tone accuracy on all subjects</li>
+              <li>Lightroom / Capture One compatible</li>
+              <li>Bulk pricing for large galleries</li>
+            </ul>
+            <button class="btn-lg btn-blue" onclick="showPage('order')">Start Your First Edit →</button>
+          </div>
+          <div class="service-detail-visual">
+            <div class="ba-wrap" style="height:320px">
+              <img src="images/wedding-edit.jpg" alt="After wedding edit"/>
+              <div class="ba-before" style="width:50%"><img src="images/wedding-edit.jpg" style="filter:saturate(0.3) brightness(0.75)" alt="Before"/></div>
+              <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+              <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JEWELLERY RETOUCHING -->
+      <section id="jewellery-retouching" style="scroll-margin-top:80px;margin-top:64px">
+        <div class="service-detail-grid reverse">
+          <div class="service-detail-info">
+            <div class="service-price-tag">From $5 per photo</div>
+            <h3>Jewellery Retouching</h3>
+            <p>High-end product editing for rings, necklaces, and bridal accessories. Reflection cleanup, background removal, and polish enhancement for catalog-ready images.</p>
+            <ul class="service-features">
+              <li>Reflection &amp; glare cleanup</li>
+              <li>Dust, scratch &amp; mark removal</li>
+              <li>White / transparent background</li>
+              <li>Metal &amp; gemstone enhancement</li>
+              <li>E-commerce &amp; catalog ready</li>
+            </ul>
+            <button class="btn-lg btn-blue" onclick="showPage('order')">Start Your First Edit →</button>
+          </div>
+          <div class="service-detail-visual">
+            <div class="ba-wrap" style="height:320px">
+              <img src="images/jewellery.jpg" alt="After jewellery retouch"/>
+              <div class="ba-before" style="width:50%"><img src="images/jewellery.jpg" style="filter:brightness(0.7) saturate(0.6)" alt="Before"/></div>
+              <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+              <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTRAIT RETOUCHING -->
+      <section id="retouching" style="scroll-margin-top:80px;margin-top:64px">
+        <div class="service-detail-grid">
+          <div class="service-detail-info">
+            <div class="service-price-tag">From $6 per photo</div>
+            <h3>Portrait &amp; Skin Retouching</h3>
+            <p>Natural, high-end retouching for bridal portraits and model shots. Frequency separation and Dodge &amp; Burn to preserve real skin texture — no artificial results.</p>
+            <ul class="service-features">
+              <li>Frequency separation skin smoothing</li>
+              <li>Dodge &amp; Burn shaping</li>
+              <li>Blemish, stray hair &amp; flyaway removal</li>
+              <li>Eye clarity &amp; lip enhancement</li>
+              <li>Background &amp; wardrobe cleanup</li>
+            </ul>
+            <button class="btn-lg btn-blue" onclick="showPage('order')">Start Your First Edit →</button>
+          </div>
+          <div class="service-detail-visual">
+            <div class="ba-wrap" style="height:320px">
+              <img src="images/retouching.jpg" alt="After retouch"/>
+              <div class="ba-before" style="width:50%"><img src="images/retouching.jpg" style="filter:saturate(0.4) brightness(0.8)" alt="Before"/></div>
+              <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+              <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- VIDEO EDITING -->
+  <div class="services-category" style="background:var(--bg2)">
+    <div class="container">
+      <div class="category-header">
+        <div class="category-icon">🎬</div>
+        <div>
+          <div class="category-title">Video &amp; Reel Editing Services</div>
+          <div class="category-sub">Short-form content for Instagram Reels, YouTube, and brand films</div>
+        </div>
+      </div>
+      <section id="video-editing" style="scroll-margin-top:80px">
+        <div class="service-detail-grid">
+          <div class="service-detail-info">
+            <div class="service-price-tag">From $49 per reel</div>
+            <h3>Instagram Reels &amp; Short-Form Editing</h3>
+            <p>Scroll-stopping Reels for photographers growing on Instagram. Beat-synced cuts, captions, color grading, and transitions — delivered within 48 hours.</p>
+            <ul class="service-features">
+              <li>Vertical 9:16 format, ready to post</li>
+              <li>Beat-synced cuts &amp; transitions</li>
+              <li>Text, caption &amp; overlay design</li>
+              <li>Color grading to match your brand</li>
+              <li>48h delivery</li>
+            </ul>
+            <button class="btn-lg btn-blue" onclick="showPage('order')">Start Your First Edit →</button>
+          </div>
+          <div class="service-detail-visual">
+            <div class="video-preview" style="height:320px">
+              <img class="video-preview-img" src="images/video-edit.jpg" alt="Video editing"/>
+              <div class="play-btn">▶</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="cta-banner">
+    <h2>Ready to start?</h2>
+    <p>Send 5 photos and we'll edit them free — no commitment needed.</p>
+    <div class="cta-actions">
+      <button class="btn-lg btn-blue"          onclick="showPage('order')">✨ Get Free Sample</button>
+      <button class="btn-lg btn-outline-white" onclick="showPage('pricing')">View Pricing</button>
+    </div>
+  </section>
+</div><!-- end services -->
+
+
+<!-- ============================================================
+     PORTFOLIO PAGE
+============================================================ -->
+<div class="page" id="page-portfolio">
+  <div class="page-hero">
+    <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd;margin-bottom:14px">Our Work</div>
+    <h1>Portfolio &amp; Before/After Examples</h1>
+    <p>Real editing work. Real results. Drag sliders to compare.</p>
+  </div>
+  <section class="section">
+    <div class="portfolio-filters">
+      <button class="filter-btn active" onclick="filterPortfolio('all',this)">All</button>
+      <button class="filter-btn" onclick="filterPortfolio('portrait',this)">Portrait</button>
+      <button class="filter-btn" onclick="filterPortfolio('wedding',this)">Wedding</button>
+      <button class="filter-btn" onclick="filterPortfolio('product',this)">Product</button>
+      <button class="filter-btn" onclick="filterPortfolio('video',this)">Video</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <div class="portfolio-item" data-cat="wedding">
+        <div class="portfolio-item-ba ba-wrap" style="height:260px">
+          <img src="images/wedding-edit.jpg" alt="Wedding edit after"/>
+          <div class="ba-before" style="width:50%"><img src="images/wedding-edit.jpg" style="filter:saturate(0.3) brightness(0.7)" alt="Before"/></div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+        </div>
+        <div class="portfolio-overlay"><div class="portfolio-label">Wedding<span>Color Correction</span></div></div>
+      </div>
+      <div class="portfolio-item" data-cat="portrait">
+        <div class="portfolio-item-ba ba-wrap" style="height:260px">
+          <img src="images/retouching.jpg" alt="Portrait after"/>
+          <div class="ba-before" style="width:50%"><img src="images/retouching.jpg" style="filter:saturate(0.4) brightness(0.8)" alt="Before"/></div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+        </div>
+        <div class="portfolio-overlay"><div class="portfolio-label">Portrait<span>Skin Retouching</span></div></div>
+      </div>
+      <div class="portfolio-item" data-cat="product">
+        <div class="portfolio-item-ba ba-wrap" style="height:260px">
+          <img src="images/jewellery.jpg" alt="Jewellery after"/>
+          <div class="ba-before" style="width:50%"><img src="images/jewellery.jpg" style="filter:brightness(0.65) saturate(0.5)" alt="Before"/></div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+        </div>
+        <div class="portfolio-overlay"><div class="portfolio-label">Product<span>Jewellery Retouch</span></div></div>
+      </div>
+      <div class="portfolio-item" data-cat="portrait">
+        <div class="portfolio-item-ba ba-wrap" style="height:260px">
+          <img src="images/color-grading.jpg" alt="Color grading after"/>
+          <div class="ba-before" style="width:50%"><img src="images/color-grading.jpg" style="filter:saturate(0.3) brightness(0.75)" alt="Before"/></div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+        </div>
+        <div class="portfolio-overlay"><div class="portfolio-label">Color Grade<span>Outdoor Portrait</span></div></div>
+      </div>
+      <div class="portfolio-item" data-cat="product">
+        <div class="portfolio-item-ba ba-wrap" style="height:260px">
+          <img src="images/background-removal.jpg" alt="Background removal after"/>
+          <div class="ba-before" style="width:50%"><img src="images/background-removal.jpg" style="filter:saturate(0.4) brightness(0.7)" alt="Before"/></div>
+          <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">↔</div></div>
+          <span class="ba-label before">Before</span><span class="ba-label after">After</span>
+        </div>
+        <div class="portfolio-overlay"><div class="portfolio-label">Product<span>Background Removal</span></div></div>
+      </div>
+      <div class="portfolio-item" data-cat="video">
+        <div class="portfolio-item-video" style="height:260px;border-radius:16px;overflow:hidden;position:relative">
+          <img src="images/video-edit.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7" alt="Video edit"/>
+          <div class="play-btn" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">▶</div>
+        </div>
+        <div class="portfolio-overlay"><div class="portfolio-label">Video<span>Brand Film Edit</span></div></div>
+      </div>
+    </div>
+  </section>
+</div><!-- end portfolio -->
+
+
+<!-- ============================================================
+     PRICING PAGE
+============================================================ -->
+<div class="page" id="page-pricing">
+  <div class="page-hero">
+    <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd;margin-bottom:14px">Pricing</div>
+    <h1>Simple, Transparent Pricing</h1>
+    <p>No hidden fees. Pay in USD or EUR via Wise, PayPal, or bank transfer.</p>
+  </div>
+  <section class="section">
+    <div class="section-header" style="margin-bottom:20px">
+      <div class="pricing-toggle">
+        <span>Photo Editing</span>
+        <div class="toggle-track" id="pricingToggle" onclick="togglePricing()"><div class="toggle-thumb"></div></div>
+        <span>Video Editing</span>
+      </div>
+    </div>
+
+    <!-- PHOTO PRICING — edit prices and features here -->
+    <div id="photoPricing">
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="plan-tier">Basic</div>
+          <div class="plan-price"><sup>$</sup>49<sub>/project</sub></div>
+          <div class="plan-desc">Perfect for small batches and simple edits.</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="yes">Up to 25 photos</li>
+            <li class="yes">Color correction</li>
+            <li class="yes">Basic exposure fix</li>
+            <li class="yes">2 revisions</li>
+            <li class="yes">48h turnaround</li>
+            <li class="no">Portrait retouching</li>
+            <li class="no">Background removal</li>
+          </ul>
+          <button class="btn-lg btn-outline-blue" onclick="showPage('order')" style="width:100%;justify-content:center">Get Started</button>
+        </div>
+        <div class="price-card popular">
+          <div class="popular-tag">⭐ Most Popular</div>
+          <div class="plan-tier">Standard</div>
+          <div class="plan-price"><sup>$</sup>149<sub>/project</sub></div>
+          <div class="plan-desc">Best for professional photographers needing consistent edits.</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="yes">Up to 100 photos</li>
+            <li class="yes">Color correction + grading</li>
+            <li class="yes">Portrait retouching</li>
+            <li class="yes">Background removal</li>
+            <li class="yes">3 revisions</li>
+            <li class="yes">24h turnaround</li>
+            <li class="no">Custom LUT creation</li>
+          </ul>
+          <button class="btn-lg btn-blue" onclick="showPage('order')" style="width:100%;justify-content:center">Get Started</button>
+        </div>
+        <div class="price-card">
+          <div class="plan-tier">Premium</div>
+          <div class="plan-price"><sup>$</sup>349<sub>/project</sub></div>
+          <div class="plan-desc">Full-service editing for studios and agencies with no limits.</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="yes">Unlimited photos</li>
+            <li class="yes">Full color grade + retouch</li>
+            <li class="yes">Custom LUT creation</li>
+            <li class="yes">Unlimited revisions</li>
+            <li class="yes">12h rush delivery</li>
+            <li class="yes">Priority support</li>
+            <li class="yes">Monthly retainer available</li>
+          </ul>
+          <button class="btn-lg btn-dark" onclick="showPage('order')" style="width:100%;justify-content:center">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIDEO PRICING -->
+    <div id="videoPricing" style="display:none">
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="plan-tier">Reel / Short</div>
+          <div class="plan-price"><sup>$</sup>49<sub>/video</sub></div>
+          <div class="plan-desc">Instagram Reels and TikTok shorts up to 90 seconds.</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="yes">Up to 90 sec video</li>
+            <li class="yes">Music sync &amp; beat cuts</li>
+            <li class="yes">Text/caption overlays</li>
+            <li class="yes">Color grading</li>
+            <li class="yes">2 revisions</li>
+            <li class="yes">48h delivery</li>
+            <li class="no">Custom intro/outro</li>
+          </ul>
+          <button class="btn-lg btn-outline-blue" onclick="showPage('order')" style="width:100%;justify-content:center">Get Started</button>
+        </div>
+        <div class="price-card popular">
+          <div class="popular-tag">⭐ Most Popular</div>
+          <div class="plan-tier">Standard Video</div>
+          <div class="plan-price"><sup>$</sup>149<sub>/video</sub></div>
+          <div class="plan-desc">YouTube videos, brand films, wedding highlights up to 10 min.</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="yes">Up to 10 min video</li>
+            <li class="yes">Multi-track editing</li>
+            <li class="yes">B-roll integration</li>
+            <li class="yes">Color grading</li>
+            <li class="yes">Audio cleanup</li>
+            <li class="yes">3 revisions</li>
+            <li class="yes">Custom intro/outro</li>
+          </ul>
+          <button class="btn-lg btn-blue" onclick="showPage('order')" style="width:100%;justify-content:center">Get Started</button>
+        </div>
+        <div class="price-card">
+          <div class="plan-tier">Premium Film</div>
+          <div class="plan-price"><sup>$</sup>349<sub>/video</sub></div>
+          <div class="plan-desc">Full cinematic production. No time limit, motion graphics included.</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="yes">Unlimited duration</li>
+            <li class="yes">Motion graphics &amp; titles</li>
+            <li class="yes">Custom sound design</li>
+            <li class="yes">Advanced color grade</li>
+            <li class="yes">Unlimited revisions</li>
+            <li class="yes">Rush delivery available</li>
+            <li class="yes">4K export</li>
+          </ul>
+          <button class="btn-lg btn-dark" onclick="showPage('order')" style="width:100%;justify-content:center">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD-ONS — edit addon names and prices here -->
+    <div style="margin-top:72px;max-width:1100px;margin-left:auto;margin-right:auto">
+      <h3 class="section-title" style="text-align:center;font-size:1.6rem">Add-On Services</h3>
+      <div class="addons-grid" style="margin-top:32px">
+        <div class="addon-card"><div class="addon-name">Rush Delivery (12h)</div><div class="addon-price">+$29</div></div>
+        <div class="addon-card"><div class="addon-name">Custom LUT Creation</div><div class="addon-price">+$49</div></div>
+        <div class="addon-card"><div class="addon-name">Background Replacement</div><div class="addon-price">+$3/photo</div></div>
+        <div class="addon-card"><div class="addon-name">Video Captions/Subtitles</div><div class="addon-price">+$19</div></div>
+        <div class="addon-card"><div class="addon-name">Print-Ready Export</div><div class="addon-price">+$9</div></div>
+        <div class="addon-card"><div class="addon-name">Monthly Retainer</div><div class="addon-price">Contact Us</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Start with a free sample edit</h2>
+    <p>Try before you commit — send one photo and see the quality yourself.</p>
+    <div class="cta-actions">
+      <button class="btn-lg btn-blue"          onclick="showPage('order')">Upload for Free</button>
+      <button class="btn-lg btn-outline-white" onclick="showPage('contact')">Talk to Us</button>
+    </div>
+  </section>
+</div><!-- end pricing -->
+
+
+<!-- ============================================================
+     ABOUT PAGE — edit brand story and team here
+============================================================ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd;margin-bottom:14px">Our Story</div>
+    <h1>About My Photo Styler</h1>
+    <p>A dedicated editing service built specifically for wedding photographers and content creators.</p>
+  </div>
+  <section class="section">
+    <div class="about-story">
+      <div class="about-story-img">
+        <img src="images/wedding-edit.jpg" alt="Editing studio"/>
+      </div>
+      <div>
+        <div class="section-label" style="margin-bottom:12px">Our Story</div>
+        <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,2.5vw,2.4rem);font-weight:800;margin-bottom:16px">
+          Built for photographers, <em style="font-style:italic;color:var(--blue)">by photographers</em>
+        </h2>
+        <!-- EDIT: change brand story here -->
+        <p style="color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:16px">My Photo Styler was built to solve a real problem: wedding photographers spending their evenings editing instead of shooting, marketing, or resting.</p>
+        <p style="color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:16px">We specialize in editing for wedding photographers and portrait artists based in the US and Germany. Our team understands your workflow, your style, and the pressure of delivering galleries that impress.</p>
+        <p style="color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:24px">Based in India, we use the timezone to your advantage — send files before bed, wake up to edited images. No meetings required.</p>
+        <button class="btn-lg btn-blue" onclick="showPage('order')">Get Free Sample Edit →</button>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--bg2)">
+    <div class="section-header">
+      <div class="section-label">Why Us</div>
+      <h2 class="section-title">Why Choose <em>My Photo Styler</em></h2>
+    </div>
+    <div class="values-grid container">
+      <div class="value-card"><div class="value-icon">🎯</div><h3>Wedding-Focused Editing</h3><p>We specialize in wedding galleries. We know what a bride's skin should look like and how ceremony light behaves.</p></div>
+      <div class="value-card"><div class="value-icon">⚡</div><h3>Reliable Turnaround</h3><p>24–48 hour delivery on photo orders. We communicate immediately if anything changes.</p></div>
+      <div class="value-card"><div class="value-icon">🎨</div><h3>Your Style, Consistently</h3><p>We work from your presets and references so every gallery looks like you edited it, not us.</p></div>
+    </div>
+  </section>
+</div><!-- end about -->
+
+
+<!-- ============================================================
+     CONTACT PAGE — edit contact details here
+============================================================ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd;margin-bottom:14px">Contact</div>
+    <h1>Let's Talk About Your Project</h1>
+    <p>Send us a message — we reply within 12 hours, every day.</p>
+  </div>
+  <section class="contact-section">
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="section-label" style="margin-bottom:12px">Get In Touch</div>
+        <h2>Let's work on your photos</h2>
+        <!-- EDIT: change contact description here -->
+        <p>Whether you have a 200-image wedding gallery or a quick reel — drop us a message and we'll confirm scope and turnaround within a few hours.</p>
+        <div class="contact-details">
+          <!-- EDIT: replace with your real email and phone -->
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div><div class="contact-detail-label">Email</div><div class="contact-detail-val">hello@myphotostyler.com</div></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📱</div>
+            <div><div class="contact-detail-label">WhatsApp</div><div class="contact-detail-val">+91 98765 43210</div></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div><div class="contact-detail-label">Response Time</div><div class="contact-detail-val">Within 12 hours · IST (UTC+5:30)</div></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🌍</div>
+            <div><div class="contact-detail-label">Serving</div><div class="contact-detail-val">USA · Germany · Worldwide</div></div>
+          </div>
+        </div>
+        <div class="map-placeholder" style="margin-top:24px">📍 Mumbai, India</div>
+      </div>
+      <div class="contact-form-box">
+        <div class="form-title">Send Your Project Brief</div>
+        <div class="form-row">
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="Jane Smith"/></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="jane@studio.com"/></div>
+        </div>
+        <div class="form-group full"><label>Service Needed</label>
+          <select>
+            <option value="">Select a service...</option>
+            <option>Wedding Color Correction</option>
+            <option>Portrait Retouching</option>
+            <option>Jewellery Retouching</option>
+            <option>Video Editing / Reels</option>
+            <option>Background Removal</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group full"><label>Project Details</label><textarea rows="5" placeholder="Number of photos, style references, deadline..."></textarea></div>
+        <button class="btn-lg btn-blue" style="width:100%;justify-content:center;border:none">Send Message →</button>
+      </div>
+    </div>
+  </section>
+</div><!-- end contact -->
+
+
+<!-- ============================================================
+     ORDER / UPLOAD PAGE
+============================================================ -->
+<div class="page" id="page-order">
+  <div class="page-hero">
+    <div class="section-label" style="background:rgba(59,130,246,.15);color:#93c5fd;margin-bottom:14px">Free Sample</div>
+    <h1>Start Your First Edit</h1>
+    <p>Upload your files, tell us your style, and we'll deliver results within 48 hours.</p>
+  </div>
+  <section class="section">
+    <div class="order-wrap">
+      <div class="order-steps">
+        <div class="order-step active" id="ostep1"><div class="step-num">1</div><div class="step-lbl">Upload</div></div>
+        <div class="order-step"        id="ostep2"><div class="step-num">2</div><div class="step-lbl">Service</div></div>
+        <div class="order-step"        id="ostep3"><div class="step-num">3</div><div class="step-lbl">Details</div></div>
+        <div class="order-step"        id="ostep4"><div class="step-num">4</div><div class="step-lbl">Submit</div></div>
+      </div>
+      <div id="orderStep1">
+        <div class="upload-box" id="uploadBox" onclick="document.getElementById('orderFile').click()"
+          ondragover="event.preventDefault();this.classList.add('active')"
+          ondragleave="this.classList.remove('active')"
+          ondrop="handleFileDrop(event)">
+          <div class="upload-box-icon">📂</div>
+          <h3>Drop Your Photos or Videos Here</h3>
+          <p>Or click to browse — send up to 5 photos for a free sample edit<br/><small style="color:#94a3b8">JPEG, PNG, RAW, MP4, MOV — Max 500MB per file</small></p>
+          <input type="file" id="orderFile" style="display:none" multiple accept="image/*,video/*" onchange="handleFileSelect(event)"/>
+        </div>
+        <div class="uploaded-files" id="uploadedFiles"></div>
+        <button class="btn-lg btn-blue" onclick="goToStep(2)" style="width:100%;justify-content:center">Continue →</button>
+      </div>
+      <div id="orderStep2" style="display:none">
+        <div class="order-section-title">Select Your Service</div>
+        <div class="service-options">
+          <div class="service-option" onclick="selectService(this,'Wedding Color Correction')"><div class="svc-opt-check">✓</div><div class="svc-opt-name">💍 Wedding Color Correction</div><div class="svc-opt-price">From $0.50/photo</div></div>
+          <div class="service-option" onclick="selectService(this,'Portrait Retouching')"><div class="svc-opt-check">✓</div><div class="svc-opt-name">🖼️ Portrait Retouching</div><div class="svc-opt-price">From $6/photo</div></div>
+          <div class="service-option" onclick="selectService(this,'Jewellery Retouching')"><div class="svc-opt-check">✓</div><div class="svc-opt-name">💎 Jewellery Retouching</div><div class="svc-opt-price">From $5/photo</div></div>
+          <div class="service-option" onclick="selectService(this,'Background Removal')"><div class="svc-opt-check">✓</div><div class="svc-opt-name">✂️ Background Removal</div><div class="svc-opt-price">From $2/photo</div></div>
+          <div class="service-option" onclick="selectService(this,'Instagram Reels')"><div class="svc-opt-check">✓</div><div class="svc-opt-name">📱 Instagram Reels</div><div class="svc-opt-price">From $49/reel</div></div>
+          <div class="service-option" onclick="selectService(this,'Video Editing')"><div class="svc-opt-check">✓</div><div class="svc-opt-name">🎬 Video Editing</div><div class="svc-opt-price">From $99/video</div></div>
+        </div>
+        <div style="display:flex;gap:12px">
+          <button class="btn-lg btn-outline-blue" onclick="goToStep(1)" style="flex:1;justify-content:center">← Back</button>
+          <button class="btn-lg btn-blue"          onclick="goToStep(3)" style="flex:2;justify-content:center">Continue →</button>
+        </div>
+      </div>
+      <div id="orderStep3" style="display:none">
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Jane Smith"/></div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="jane@studio.com"/></div>
+        <div class="form-group"><label>Editing Instructions</label><textarea rows="5" placeholder="Describe the look you want — color tone, skin smoothing level, references..."></textarea></div>
+        <div class="form-group"><label>Delivery Speed</label>
+          <select><option>Standard – 48 hours (included)</option><option>Rush – 24 hours (+$19)</option><option>Urgent – 12 hours (+$39)</option></select>
+        </div>
+        <div style="display:flex;gap:12px">
+          <button class="btn-lg btn-outline-blue" onclick="goToStep(2)" style="flex:1;justify-content:center">← Back</button>
+          <button class="btn-lg btn-blue"          onclick="goToStep(4)" style="flex:2;justify-content:center">Review Order →</button>
+        </div>
+      </div>
+      <div id="orderStep4" style="display:none">
+        <div style="background:var(--blue-light);border:1px solid #bfdbfe;border-radius:16px;padding:32px;text-align:center;margin-bottom:24px">
+          <div style="font-size:48px;margin-bottom:12px">🎉</div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:8px">You're all set!</h3>
+          <p style="color:var(--muted);font-size:14px;line-height:1.7;max-width:420px;margin:0 auto">Your files and brief are ready. Click submit — we'll confirm and begin your free sample edit within a few hours.</p>
+        </div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:24px">
+          <div style="font-weight:700;margin-bottom:12px;font-family:'Syne',sans-serif">Order Summary</div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted)">Files</span><span id="summaryFiles">—</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--muted)">Service</span><span id="summaryService">—</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;padding:8px 0"><span style="color:var(--muted)">First order</span><span style="color:var(--green);font-weight:700">Free sample ✓</span></div>
+        </div>
+        <div style="display:flex;gap:12px">
+          <button class="btn-lg btn-outline-blue" onclick="goToStep(3)" style="flex:1;justify-content:center">← Edit</button>
+          <button class="btn-lg btn-blue"          onclick="submitOrder()" style="flex:2;justify-content:center">✨ Submit Order →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end order -->
+
+
+<!-- ============================================================
+     FOOTER — edit links, email, phone, location here
+============================================================ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">
+        <span style="background:var(--blue);border-radius:8px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:15px">📸</span>
+        My Photo <span style="color:var(--blue)">Styler</span>
+      </div>
+      <!-- EDIT: change tagline here -->
+      <p>Wedding photo &amp; video editing for photographers in the US and Germany. Fast delivery, consistent style, free sample edit.</p>
+      <div class="footer-social">
+        <a class="social-btn" href="#">📷</a>
+        <a class="social-btn" href="#">💼</a>
+        <a class="social-btn" href="#">🐦</a>
+        <a class="social-btn" href="#">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="wedding-photo-editing.html">Wedding Editing</a></li>
+        <li><a href="retouching.html">Portrait Retouching</a></li>
+        <li><a href="jewellery-retouching.html">Jewellery Retouching</a></li>
+        <li><a href="video-editing.html">Video &amp; Reels</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+        <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+        <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <!-- EDIT: replace with your real contact details -->
+        <li><a href="mailto:hello@myphotostyler.com">hello@myphotostyler.com</a></li>
+        <li><a href="https://wa.me/919876543210">WhatsApp: +91 98765 43210</a></li>
+        <li><a href="#">Mumbai, India</a></li>
+        <li><a href="#">Serving US &amp; Germany</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 My Photo Styler · All Rights Reserved</span>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
