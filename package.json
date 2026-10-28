@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "htmlhint": "^1.9.2"
+  },
+  "scripts": {
+    "validate-html": "htmlhint \"**/*.html\""
+  }
+}
