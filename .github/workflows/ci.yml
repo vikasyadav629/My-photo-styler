@@ -1,0 +1,25 @@
+
+name: My Photo Styler CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate website files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f index.html
+          test -f css/styles.css
+          test -f js/main.js
+          test -d images
+          echo "All required website files exist."
