@@ -40,3 +40,6 @@ jobs:
 
       - name: Security audit
         run: npm audit
+
+      - name: Detect secrets with Gitleaks
+        uses: gitleaks/gitleaks-action@v2
