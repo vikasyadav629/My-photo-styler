@@ -37,3 +37,6 @@ jobs:
 
       - name: Validate CSS
         run: npm run validate-css
+
+      - name: Security audit
+        run: npm audit
