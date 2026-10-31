@@ -7,5 +7,8 @@
   "scripts": {
     "validate-html": "htmlhint \"**/*.html\"",
     "validate-css": "stylelint \"css/**/*.css\""
+  },
+  "overrides": {
+    "glob": "^14.0.3"
   }
 }
