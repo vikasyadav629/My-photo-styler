@@ -2,7 +2,7 @@
   "devDependencies": {
     "htmlhint": "^1.9.2",
     "stylelint": "^16.26.1",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint-config-standard": "^40.0.0"
   },
   "scripts": {
     "validate-html": "htmlhint \"**/*.html\"",
